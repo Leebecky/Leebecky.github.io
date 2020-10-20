@@ -1,0 +1,32 @@
+:root {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #8a8c84;
+    color: white;
+}
+
+#profile, #projects {
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+    top: 0%;
+    left: 0%;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#profilePicture {
+    border-radius: 5%;
+    position: absolute;
+    right: 10%;
+}
+
+.projectCard {
+    background-color: royalblue;
+    height: 20em;
+    width: 15em;
+    margin: 10px;
+}
