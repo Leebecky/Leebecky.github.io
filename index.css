@@ -8,7 +8,7 @@ a {
     color: white;
 }
 a:hover {
-    color: rebeccapurple;
+    color: #663399;
 }
 nav {
     background-color: black;
@@ -56,12 +56,46 @@ nav {
 }
 
 .projectCard {
-    background-color: royalblue;
+    background-color: #663399;
     height: 20em;
     width: 15em;
     margin: 10px;
+    position: relative;
 }
 
-.projectCard p {
+.projectDescription {
+    background-color: #663399;
+    height: 15em;
+    width: 15em;
+    position: absolute;
+    top: 0%;
+    opacity: 0;
+    transition: .3s ease;
     text-align: center;
+    border-bottom: 1px solid slategray;
+}
+
+.projectCard:hover .projectDescription {
+    opacity: 1;
+}
+
+.projectDescription p {
+    margin-top: 3em;
+}
+
+.projectCard a {
+    text-align: center;
+    display: block;
+    margin-top: 1em;
+    font-size: 18px;
+}
+
+.projectCard a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.projectThumbnail {
+    width: 15em;
+    height: 15em;
 }
