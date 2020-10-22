@@ -1,0 +1,33 @@
+GAMEBOARD: 
+    ☐ Create Tiles
+    ☐ Score
+    ☐ Word List
+    ✔ Timer (2 minutes) @done(20-09-11 00:30)
+    ✔ Rotate button @done(20-09-10 12:19)
+    ☐ Challenge Header
+    ☐ Deselect
+    ✔ Check for duplicates in listed words @done(20-09-17 14:41)
+    ☐ Sound effects
+
+SCORE SUMMARY:
+    ☐ Mini game board
+    ☐ Score section
+    ☐ Word List 
+        ☐ Found
+        ☐ Not Found
+    ☐ Timer to next game
+
+LEADERBOARD :
+    ☐ Username
+    ☐ Score/Words
+    ☐ Position
+    ☐ Top %
+
+HOME PAGE: 
+    ☐ Registration
+    ☐ Statistics
+
+
+COMPLETED: 
+
+ARCHIVE: 

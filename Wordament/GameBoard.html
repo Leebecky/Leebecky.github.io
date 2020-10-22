@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+    <link rel="stylesheet" href="Styles.css">
+    <script src="https://kit.fontawesome.com/95ae4754e2.js" crossorigin="anonymous"></script>
+   
+    <title>Wordament</title>
+  </head>
+  <body>
+     <header id="GameHeader">
+      <ul>
+        <li id="Score">Score/Total Score</li>
+        <li>Words Found/Words Available</li>
+        <li id="Timer">02:00</li>
+      </ul>
+     </header>
+    <h1 id="Title">Developing a Wordament clone</h1>
+
+    <!--^ Game Board -->
+  <div id="GameBoard">
+      <div class="GameTile Tile">
+        <span class="TilePoint">3</span> 
+        <span class="TileValue">B
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">1</span> 
+        <span class="TileValue">I</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">1</span> 
+        <span class="TileValue">R</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">1</span> 
+        <span class="TileValue">T</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">1</span> 
+        <span class="TileValue">E</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">1</span> 
+        <span class="TileValue">T</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">4</span> 
+        <span class="TileValue">H</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">2</span> 
+        <span class="TileValue">D</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">1</span> 
+        <span class="TileValue">A</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">5</span> 
+        <span class="TileValue">K</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">1</span> 
+        <span class="TileValue">A</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">4</span> 
+        <span class="TileValue">Y</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">3</span> 
+        <span class="TileValue">C</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">3</span> 
+        <span class="TileValue">P</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">3</span> 
+        <span class="TileValue">P</span>   
+      </div>
+      <div class="GameTile Tile">
+        <span class="TilePoint">2</span> 
+        <span class="TileValue">D</span>   
+      </div>
+     
+
+      <input id="RotateDeg" type="hidden" value="0">
+      <!-- <input id="Word" type="text"> -->
+    </div>
+    <h2 id="Word">WORD</h2>
+    
+<!--^ Rotate Button -->
+    <i id="RotateBtn" class="fas fa-sync-alt"></i>
+      
+  <!--^ Word List -->
+  <div id="WordListBox">
+    <ul id="WordList"></ul>
+  </div>
+  <div id="PointListBox">  
+    <ul id="PointList"></ul>
+  </div>
+
+  
+  <!--^ Footer -->
+  <nav class="NavBar">
+    <ul>
+        <li><a href="GameBoard.html">Wordament</a></li>
+        <li><a href="Change Log.html">Change Log</a></li>
+    </ul>
+</nav>
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <!-- JavaScript -->
+ <script src="WordamentJS.js"></script>
+ <script src="Player.js"></script>
+ <!-- <script src="dictionary.js"></script> -->
+ <!-- <script src="WordValidation.js"></script> -->
+  </body>
+</html>

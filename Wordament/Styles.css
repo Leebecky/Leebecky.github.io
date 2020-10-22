@@ -1,0 +1,148 @@
+:root {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --Background: #002366;
+    --Tile: #FC6A03;
+    --TileHover: #FDA172;
+}
+body{
+    background-color: var(--Background);
+}
+* {
+    color: white;
+    text-decoration: none;
+    user-select: none;
+}
+
+
+/*^ Navigation Bar */
+.NavBar {   
+    background-color: var(--Tile); 
+    width: 100%;
+    height: 3em;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.NavBar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#changeLog-Nav {
+    position: fixed;
+    top: 0%;
+    grid-area: navBar;
+}
+
+#Title {
+    padding-top: 2em;
+}
+
+/*^ Game Header  */
+#GameHeader {
+    background-color: var(--Tile); 
+    width: 100%;
+    height: 5em;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+#GameHeader ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+/*^ Game Board */
+.GameTile {
+    border: 1px solid var(--Tile,orange);
+    background-color: var(--Tile);
+    width: 5em;
+    height: 5em;
+    text-align: center;
+}
+.GameTile:hover{
+    background-color: var(--TileHover);
+}
+.Tile-Hover {
+    border: 1px solid var(--Tile,orange);
+    background-color: var(--TileHover, orange);
+    width: 5em;
+    height: 5em;
+    text-align: center;
+}
+.TileValue {
+    font-size: 4em;
+    width: 1em;
+    display: inline-block;
+    position: relative;
+    right: 10%;
+    top: 10%;
+}
+.TilePoint {
+    font-size: 14px;
+    color: white;
+    display: inline-block;
+    position: relative;
+    bottom: 55%;
+    left: 80%;
+}
+#GameBoard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 21.1em;
+    gap: 0.2rem;
+}
+
+#Word {
+    position: absolute;
+    top: 18%;
+    left: 60%;
+}
+
+/*^ Rotate Button  */
+#RotateBtn {
+    font-size: 3em;
+    position: absolute;
+    left: 8em;
+    top: 3.5em;
+    transition: transform 2s;
+}
+#RotateBtn:hover {
+    transform: rotate(180deg);
+}
+
+/*^ Word List */
+
+#WordListBox {
+    width: 25em;
+    height: 20em;
+    overflow-y: auto;
+    position: absolute;
+    top: 8em;   
+    left: 50%;
+}
+#PointListBox {
+    width: 5em;
+    height: 20em;
+    overflow-y: auto;
+    position: absolute;
+    top: 8em;   
+    left: 75.5%;
+    z-index: 2;
+}
+#WordList, #PointList {
+    list-style: none;
+}
+
+/*^ Changelog */
+#Changelog {
+    display: grid;
+    grid-template-rows: 100%, 5em;
+    grid-template-areas: "logBody navBar";
+}
+#Log {
+    grid-area: logBody;
+}
