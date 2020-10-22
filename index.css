@@ -61,3 +61,7 @@ nav {
     width: 15em;
     margin: 10px;
 }
+
+.projectCard > p {
+    text-align: center;
+}
