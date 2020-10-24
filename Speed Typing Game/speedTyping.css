@@ -1,0 +1,86 @@
+body {
+    background-color: orange;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heading {
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+.cpm, .wpm, .errors, .timer, .accuracy {
+    background-color: #ccda46;
+    width: 8em;
+    height: 6em;
+    margin: 1em;
+    box-shadow: black 5px 8px 5px;
+    border-radius: 15%; 
+}
+.cpm, .wpm {
+    display: block;
+}
+
+.header-text {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.header-cpm, .header-wpm, .header-time, .header-accuracy, .header-errors {
+    margin-top: 0.5rem;
+    font-size: 3rem;
+}
+
+.quote {
+    background-color: #ccda46;
+    font-size: 1.5rem;
+    margin: 1em;
+    padding: 1.5em;
+    box-shadow: black 5px 8px 5px;
+}
+
+.input_area {
+    background-color: #F5F5C6;
+    height: 7em;
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1.5em;
+    padding: 1.5em;
+    border: 0px;
+    box-shadow: black 5px 8px 5px;
+}
+
+.restart_btn {
+    display: none;
+    background-color: #326765;
+    font-size: 1.5rem;
+    padding: 1em;
+    border: 0px;
+    box-shadow: black 5px 8px 5px;
+}
+
+.incorrect_char {
+    color: red;
+    text-decoration:underline;
+}
+
+.correct_char {
+    color: darkgreen;
+}
+
+#reference {
+    position: absolute;
+    bottom: -15%;
+    right: 0%;
+    font-size: 0.7rem;
+}

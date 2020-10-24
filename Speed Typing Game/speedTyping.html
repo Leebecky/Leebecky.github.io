@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="speedTyping.css">
+    </head>
+    
+    <body>
+  <div class="container">
+        <h1 id="heading">Simple Speed Typing</h1>
+<div class="header">
+
+    <div class="wpm">
+        <div class="header-text">WPM</div>
+        <div class="header-wpm">100</div>
+    </div>
+
+    <div class="cpm">
+        <div class="header-text">CPM</div>
+        <div class="header-cpm">100</div>
+    </div>
+
+    <div class="errors">
+        <div class="header-text">Errors</div>
+        <div class="header-errors">0</div>
+    </div>
+
+    <div class="timer">
+        <div class="header-text">Time</div>
+        <div class="header-time">60s</div>
+    </div>
+
+    <div class="accuracy">
+        <div class="header-text">% Accuracy</div>
+        <div class="header-accuracy">100</div>
+    </div>
+
+</div>
+
+    <div class="quote">
+        Click on the area below to start the game.
+    </div>
+    
+    <textarea 
+        class="input_area" 
+        oninput="processCurrentText()"
+        placeholder="Start typing here..."
+        onfocus="startGame()"></textarea>
+
+    <button 
+        class="restart_btn"
+        onclick="resetValues()">
+        Restart</button>
+
+</div>
+
+<p id="reference">Guided by https://www.geeksforgeeks.org/design-a-typing-speed-test-game-using-javascript/</p>
+
+<script src="speedTyping.js"></script>
+    </body>
+</html>
